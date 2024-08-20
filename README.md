@@ -2,5 +2,5 @@
 
 ### Site de Arrecadação de Doações para ONG
 
-##### Grupo - ### Power Ong
+##### Grupo - Power Ong
 ###### Erick Valente - Luis Flávio
