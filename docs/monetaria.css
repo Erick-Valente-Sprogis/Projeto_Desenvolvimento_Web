@@ -81,10 +81,14 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Brawler', sans-serif;
+    font-family: "Brawler", sans-serif;
+        min-height: 100vh;
+        /* Garante que o corpo ocupe a altura completa */
 }
 
 #content {
+    flex: 1;
+        /* Faz o conteúdo ocupar o espaço disponível */
     padding-left: 15px;
 }
 
@@ -186,6 +190,7 @@ footer {
     background-color: #9D9999;
     padding: 15px 0;
     text-align: center;
+    /* Garante que o rodapé fique no final da página */
 }
 
 footer p {
