@@ -2,18 +2,22 @@
 
 html,
 body {
-    background-color: #D9D9D9;
+background-color: #D9D9D9;
     height: 100%;
     margin: 0;
 }
 
 body {
-    display: flex;
+display: flex;
     flex-direction: column;
-    font-family: 'Brawler', sans-serif;
+    font-family: "Brawler", sans-serif;
+        min-height: 100vh;
+        /* Garante que o corpo ocupe a altura completa */
 }
 
 #content {
+flex: 1;
+    /* Faz o conteúdo ocupar o espaço disponível */
     padding-left: 15px;
 }
 
@@ -80,14 +84,11 @@ main {
     font-size: 50px;
 }
 
-
-
-
-
 footer {
     background-color: #9D9999;
     padding: 15px 0;
     text-align: center;
+        /* Garante que o rodapé fique no final da página */
 }
 
 footer p {
