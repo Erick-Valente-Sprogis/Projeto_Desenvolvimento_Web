@@ -1,24 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap");
 
 html,
 body {
-background-color: #D9D9D9;
     height: 100%;
-    margin: 0;
+    font-family: "Brawler", sans-serif !important;
 }
 
 body {
-display: flex;
+    display: flex;
     flex-direction: column;
-    font-family: "Brawler", sans-serif;
-        min-height: 100vh;
-        /* Garante que o corpo ocupe a altura completa */
-}
-
-#content {
-flex: 1;
-    /* Faz o conteúdo ocupar o espaço disponível */
-    padding-left: 15px;
+    min-height: 100vh;
 }
 
 header {
@@ -28,70 +20,104 @@ header {
 
 .header-content {
     display: flex;
+        /* Certifique-se de que o display esteja definido */
     align-items: center;
-    /* Alinha verticalmente o conteúdo */
-    justify-content: center;
-    /* Alinha horizontalmente o conteúdo */
+    justify-content: space-between;
+        padding: 20px 0;
 }
 
 h1 {
     font-size: 100px;
+        /* Altere para tamanhos responsivos usando media queries, se necessário */
     margin: 0;
-    /* Remove a margem para alinhamento */
-}
-
-nav ul {
     text-align: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
-nav ul li {
-    margin-right: 20px;
+nav .nav-link {
+    color: #000000 !important;
+    /* Adicione !important para garantir que o estilo se aplique */
 }
 
-nav ul li a {
-    font-size: 20px;
-    padding: 6px;
-    text-decoration: none;
-    color: #000000;
-}
-
-nav ul li a:hover {
+nav .nav-link:hover {
     text-decoration: underline;
-    border-radius: 10px;
-    color: #000000;
+    color: #000000 !important;
+    /* Adicione !important para garantir que o estilo se aplique */
 }
-
-main {
-    flex: 1;
-    /* Faz com que o main ocupe todo o espaço disponível */
-}
-
 
 #main {
-    text-align: center;
-    justify-content: center;
+    padding: 20px 15px;
+    /* Espaçamento nas laterais */
 }
 
-#main h1 {
-    text-decoration: underline;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 50px;
+h1 {
+    font-size: 2.5rem;
+    /* Tamanho maior para dispositivos grandes */
+    margin-bottom: 1rem;
+    /* Espaço abaixo do título */
+}
+
+h2 {
+    font-size: 2rem;
+    /* Tamanho do subtítulo */
+    margin-bottom: 1rem;
+    /* Espaço abaixo do subtítulo */
+}
+
+p {
+    font-size: 1rem;
+    /* Tamanho padrão do texto */
+    line-height: 1.5;
+    /* Altura da linha para melhor legibilidade */
+    margin-bottom: 1.5rem;
+    /* Espaço abaixo do parágrafo */
+}
+
+/* Estilos para telas maiores (tablets e desktops) */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        /* Tamanho do título em telas maiores */
+    }
+
+        h2 {
+            font-size: 2.5rem;
+            /* Tamanho do subtítulo em telas maiores */
+        }
+
+        p {
+            font-size: 1.2rem;
+            /* Aumenta o tamanho da fonte em telas maiores */
+        }
+}
+
+/* Estilos para telas ainda maiores */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+        /* Tamanho ainda maior para o título */
+    }
+
+        h2 {
+            font-size: 3rem;
+            /* Tamanho ainda maior para o subtítulo */
+        }
+
+        p {
+            font-size: 1.5rem;
+            /* Aumenta ainda mais o tamanho da fonte */
+        }
 }
 
 footer {
     background-color: #9D9999;
-    padding: 15px 0;
-    text-align: center;
-        /* Garante que o rodapé fique no final da página */
+        /* Cor de fundo do footer */
+        padding: 15px 0;
+        /* Espaçamento do footer */
 }
 
-footer p {
-    font-size: 14px;
+.footer p {
     margin: 0;
+    /* Remove margem padrão do parágrafo */
+    font-size: 1rem;
+    /* Tamanho padrão da fonte no footer */
 }
