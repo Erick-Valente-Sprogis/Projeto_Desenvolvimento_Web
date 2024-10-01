@@ -5,88 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Cadastro</title>
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>Joined Hands</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#doacoes">Doações</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg" style="background-color: #9D9999;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1>Joined Hands</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#doacoes">Doações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+        </nav>
     </header>
+    
 
-    <form method="post" action="" id="cadastro" class="cadastro">
+    <!-- Primeiro formulário -->
+<div class="container my-5">
+    <form method="POST" action="C:\xampp\htdocs\processamento_dados.php" id="cadastro" class="cadastro">
         <h2>Cadastro</h2>
-        <label for="input_name">Nome Completo:</label>
-        <input type="text" id="input_name" class="input_name" placeholder="Nome Completo" maxlength="60" required><label
-            for="input_name"> *</label><br><br>
+        <div class="mb-3">
+            <label for="input_name" class="form-label">Nome Completo:</label> <span class="text-danger"> *</span>
+            <input name="nome_completo" type="text" id="input_name" class="form-control" placeholder="Nome Completo"
+                maxlength="60" required>
+        </div>
+        <div class="mb-3">
+            <label for="input_telefone" class="form-label">Número de Telefone:</label><span class="text-danger"> *</span>
+            <input name="telefone" type="tel" id="input_telefone" class="form-control" placeholder="Telefone" maxlength="12"
+                required>
+            
+            </div>
+            
+            <div class="mb-3">
+                <label for="input_gmail" class="form-label">Endereço de Email:</label><span class="text-danger"> *</span>
+                <input name="gmail" type="email" id="input_gmail" class="form-control" placeholder="Endereço de Email"
+                    maxlength="50" required>
+            
+            </div>
+            
+            <div class="mb-3">
+                <label for="input_cep" class="form-label">Código Postal (CEP):</label><span class="text-danger"> *</span>
+                <input name="CEP" type="text" id="input_cep" class="form-control" placeholder="Código Postal (CEP)" maxlength="10"
+                    required>
+            
+            </div>
 
-        <label for="input_telefone">Número de Telefone:</label>
-        <input type="tel" id="input_telefone" class="input_telefone" placeholder="Telefone" maxlength="12"
-            required><label for="input_telefone"> *</label><br><br>
+        <div class="mb-3">
+            <label for="input_logadouro" class="form-label">Logradouro:</label><span class="text-danger"> *</span>
+            <input name="logadouro" type="text" id="input_logadouro" class="form-control" placeholder="Logradouro"
+                maxlength="100" required>
+            </div>
 
-        <label for="input_gmail">Endereço de Email:</label>
-        <input type="email" id="input_gmail" class="input_gmail" placeholder="Endereço de Email" maxlength="50"
-            required><label for="input_gmail"> *</label><br><br>
-
-        <label for="input_cep">Código Postal (CEP):</label>
-        <input type="text" id="input_cep" class="input_cep" placeholder="Código Postal (CEP)" maxlength="8"
-            required><label for="input_cep"> *</label><br><br>
-
-        <label for="input_logadouro">Logadouro:</label>
-        <input type="text" id="input_logadouro" class="input_logadouro" placeholder="Logadouro" maxlength="100"
-            required><label for="input_logadouro"> *</label><br><br>
-
-        <input type="submit" id="submit" value="CADASTRAR">
+            <input type="submit" id="submit" class="btn btn-custom" value="CADASTRAR">
     </form>
-    <hr>
-    <form method="post" action="" id="dados_bancarios" class="dados_bancarios">
-        <h2 id="dados_bancarios" class="dados_bancarios">Dados Bancários</h2>
 
+    <!-- Segundo formulário -->
+    <form method="POST" action="C:\xampp\htdocs\processamento_dados.php" id="dados_bancarios" class="dados_bancarios mt-5">
+        <h2>Dados Bancários</h2>
         <h4>(Opcional)</h4>
-
         <p>(Os dados bancários serão requisitados caso deseje fazer uma doação monetária.)</p><br>
 
-        <label for="input_name">Nome Completo:</label>
-        <input type="text" id="input_name" class="input_name" placeholder="Nome Completo" maxlength="50" required>
-        <label for="input_name"> *</label><br><br>
-
-        <label for="input_valid">Data de Validade do Cartão:</label>
-        <input type="date" id="input_valid" class="input_valid" placeholder="Data de Validade do Cartão" maxlength="12"
-            required><label for="input_valid"> *</label><br><br>
-
-        <label for="input_numcartao">Número do Cartão:</label>
-        <input type="text" id="input_numcartao" class="input_numcartao" placeholder="Número do Cartão" maxlength="50"
-            required><label for="input_numcartao"> *</label><br><br>
-
-        <label for="input_cvv">Código de Segurança CVV:</label>
-        <input type="text" id="input_cvv" class="input_cvv" placeholder="Código de Segurança CVV" maxlength="8"
-            required><label for="input_cvv"> *</label><br><br>
-
-        <label for="input_cobranca">Endereço de Cobrança:</label>
-        <input type="text" id="input_cobranca" class="input_cobranca" placeholder="Endereço de Cobrança" maxlength="100"
-            required><label for="input_cobranca"> *</label><br><br>
-
-        <input type="submit" id="submit" value="CADASTRAR">
-    </form>
-
-    <footer>
-        <div class="footer">
-            <p>&copy;2024 Joined Hands. Todos os direitos reservados. Proibida a reprodução, distribuição ou
-                qualquer uso não autorizado do conteúdo deste site sem permissão expressa.</p>
+        <div class="mb-3">
+            <label for="input_nome_dados" class="form-label">Nome Completo:</label><span class="text-danger"> *</span>
+            <input name="nome_completo_bancario" type="text" id="input_nome_dados" class="form-control"
+                placeholder="Nome Completo" maxlength="50">
         </div>
+        <div class="mb-3">
+            <label for="input_valid" class="form-label">Data de Validade do Cartão:</label><span class="text-danger"> *</span>
+            <input name="validade_cartao" type="date" id="input_valid" class="form-control"
+                placeholder="Data de Validade do Cartão" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="input_numcartao" class="form-label">Número do Cartão:</label><span class="text-danger"> *</span>
+            <input name="num_cartao" type="text" id="input_numcartao" class="form-control" placeholder="Número do Cartão"
+                maxlength="50" required>
+            </div>
+            <div class="mb-3">
+                <label for="input_cvv" class="form-label">Código de Segurança CVV:</label><span class="text-danger"> *</span>
+                <input name="CVV" type="text" id="input_cvv" class="form-control" placeholder="Código de Segurança CVV"
+                    maxlength="8" required>
+            </div>
+
+        <div class="mb-3">
+            <label for="input_cobranca" class="form-label">Endereço de Cobrança:</label><span class="text-danger"> *</span>
+            <input name="endereco_cobranca" type="text" id="input_cobranca" class="form-control"
+                placeholder="Endereço de Cobrança" maxlength="100">
+</div>
+
+<input type="submit" id="submit" class="btn btn-custom" value="CADASTRAR">
+    </form>
+</div>
+
+<footer>
+    <div class="footer text-center">
+        <p>&copy;2024 Joined Hands. Todos os direitos reservados. Proibida a reprodução, distribuição ou qualquer uso não
+            autorizado do conteúdo deste site sem permissão expressa.</p>
+    </div>
     </footer>
-    <script src="script.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
