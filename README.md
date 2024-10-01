@@ -1,4 +1,4 @@
-##### Grupo - Joined Hands
+## Grupo - Joined Hands
 
 ###### Responsáveis: Erick Valente - Luis Flávio - Murilo Muniz - Lucas Bueno
 
