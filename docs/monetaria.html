@@ -50,72 +50,74 @@
             será encaminhado para a janela de pagamento automaticamente.
         </p>
     </section>
-    
-    <section id="valores" class="valores container">
-        <div class="row">
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 1,00</p>
-                </a>
+
+    <div class="caixas_valores">
+        <section id="valores" class="valores container">
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 1,00</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 5,00</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 10,00</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 20,00</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 50,00</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 100,00</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 150,00</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 200,00</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 300,00</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 400,00</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 500,00</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="" class="openPopup">
+                        <p>R$ 1000,00</p>
+                    </a>
+                </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 5,00</p>
-                </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 10,00</p>
-                </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 20,00</p>
-                </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 50,00</p>
-                </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 100,00</p>
-                </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 150,00</p>
-                </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 200,00</p>
-                </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 300,00</p>
-                </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 400,00</p>
-                </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 500,00</p>
-                </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="" class="openPopup">
-                    <p>R$ 1000,00</p>
-                </a>
-            </div>
-        </div>
-    </section>
-    
+        </section>
+    </div>
+
     <div id="popup" class="popup">
         <div class="popup-content">
             <span class="close-btn" id="closePopup">&times;</span>
@@ -130,7 +132,7 @@
                 <label for="input_name"></label><span class="text-danger"> *</span><br><br>
     
                 <label for="input_valid">Data de Validade do Cartão:</label>
-                <input type="date" id="input_valid" class="input_valid" placeholder="Data de Validade do Cartão" required>
+                <input type="date" id="input_valid" class="input_valid" required>
                 <label for="input_valid"></label><span class="text-danger"> *</span><br><br>
 
                 <label for="input_numcartao">Número do Cartão:</label>
