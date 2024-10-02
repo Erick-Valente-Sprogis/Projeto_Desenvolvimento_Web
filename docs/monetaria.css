@@ -53,7 +53,7 @@
     text-align: center;
 }
 
-input.btn-custom {
+input .btn-custom {
     /* Use uma classe específica para os botões */
     background-color: #0A6F94;
     color: #D9D9D9;
