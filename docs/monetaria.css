@@ -17,7 +17,7 @@
 .popup-content input {
     background-color: #9D9999;
     border-radius: 4px;
-    width: 150px;
+    width: 200px;
 }
 
 .popup-content {
@@ -53,12 +53,16 @@
     text-align: center;
 }
 
-#submit {
+input.btn-custom {
+    /* Use uma classe específica para os botões */
     background-color: #0A6F94;
     color: #D9D9D9;
     font-size: 16px;
     border-radius: 6px;
+    width: 100%;
+        padding: 10px;
 }
+
 .close-btn {
     cursor: pointer;
     color: #000000;
