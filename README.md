@@ -22,6 +22,6 @@ https://www.figma.com/design/YPmd8nDATcjzpjRNCZePaG/Untitled?node-id=0-1&t=YwDfq
 
 ### Site Logo:
 
-![default_transparent_765x625](https://github.com/user-attachments/assets/0e601991-0f95-4d9e-bb44-e0d23b3a4a4c)
+<img src="docs/imgs/Joined Hands_Logo.png" alt="Descrição da Imagem" width="765" height="625">
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS-239120?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/Javascript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
