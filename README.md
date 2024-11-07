@@ -4,11 +4,17 @@
 
 ### - **Quem Somos:**
 
-###### Na Joined Hands, nosso objetivo é transformar a generosidade em ação. Acreditamos que cada doação, por menor que seja, pode fazer uma diferença significativa na vida de quem precisa. Nossa missão é criar uma plataforma acessível e transparente que conecte doadores a causas significativas, promovendo um impacto positivo nas comunidades. Com compromisso e integridade, buscamos inspirar e facilitar a solidariedade, empoderando indivíduos a contribuírem para um mundo mais justo e igualitário. Juntos, podemos unir nossas mãos e corações para construir um futuro melhor para todos.
+###### Joined Hands, somos uma empresa focada no atendimento daqueles que necessitam. Nosso foco é emcaminhar o usuário para onde ele quer ir, ele tem algo a oferecer? Nós mostramos o que fazer, como fazer e para onde ir!
 
 ### - **Nosso Objetivo:**
 
  ###### Na Joined Hands, nosso objetivo é transformar a generosidade em ação. Acreditamos que cada doação, por menor que seja, pode fazer uma diferença significativa na vida de quem precisa. Nossa missão é criar uma plataforma acessível e transparente que conecte doadores a causas significativas, promovendo um impacto positivo nas comunidades. Com compromisso e integridade, buscamos inspirar e facilitar a solidariedade, empoderando indivíduos a contribuírem para um mundo mais justo e igualitário. Juntos, podemos unir nossas mãos e corações para construir um futuro melhor para todos.
+
+### - **Funcionalidades:**
+
+###### Os usuários têm a oportunidade de realizar doações, tanto monetárias quanto de sangue e de alimentos. Os usuários têm acesso a um mapa que baseado no seu CEP anteriormente cadastrado, mostrará pontos de coleta e doação, como hospitais e ONGs. 
+
+###### Membros das entidades podem realizar o cadastro de suas entidades no mapa, utilizando de latitude e longitude, os pontos serão todos mostrados no mapa, de maneira que o usuário que queira fazer qualquer doação, possa escolher aquele mais próximo de sua residência ou de preferência.
 
  ### - **Nosso Lema:**
 
