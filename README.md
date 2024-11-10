@@ -4,7 +4,7 @@
 
 ### - **Quem Somos:**
 
-###### Joined Hands, somos uma empresa focada no atendimento daqueles que necessitam. Nosso foco é emcaminhar o usuário para onde ele quer ir, ele tem algo a oferecer? Nós mostramos o que fazer, como fazer e para onde ir!
+###### Na Joined Hands, acreditamos no poder da solidariedade e na capacidade de transformar vidas por meio da generosidade. Somos uma plataforma dedicada a conectar doadores e organizações sem fins lucrativos, facilitando o ato de doar e ampliando o impacto social. Nossa missão é criar um mundo onde cada gesto de bondade conte, incentivando a colaboração entre indivíduos e comunidades. Com um compromisso firme com a transparência e a responsabilidade, trabalhamos para garantir que cada contribuição seja utilizada de forma eficaz e significativa. Junte-se a nós e faça parte dessa corrente do bem!
 
 ### - **Nosso Objetivo:**
 
