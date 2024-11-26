@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap");
+
+html,
+body {
+    height: 100%;
+    font-family: "Brawler", sans-serif !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #9D9999;
+    padding: 20px 0;
+}
+
+/* Estilização do container geral do header */
+.header-container {
+    display: flex; /* Usando flexbox para alinhar os elementos do header */
+    align-items: center; /* Centraliza verticalmente o h1 e a nav-bar */
+    justify-content: space-between; /* O h1 vai para a esquerda, e a nav-bar para a direita */
+    background-color: #9D9999;
+    padding: 20px 10px;
+}
+
+/* Estilização do título h1 */
+.header-container h1 {
+    font-size: 60px;
+    margin: 0;
+    color: #000000;
+}
+
+/* Geral: alinhamento total à direita */
+nav .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Move os links para a direita */
+}
+
+/* Margem padrão entre os links */
+nav .navbar-nav li {
+    margin-right: 15px;
+}
+
+/* Espaçamento extra entre os dois grupos */
+nav .navbar-nav .group-separator {
+    margin-right: 60px; /* Espaçamento entre os grupos */
+}
+
+/* Estilo para links */
+nav .nav-link {
+    color: #ffffff !important;
+    transition: transform 0.3s ease;
+}
+
+nav .nav-link:hover {
+    text-decoration: underline;
+    color: #075007 !important;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #9D9999;
+        margin-top: auto;
+    padding: 15px 0;
+    text-align: center;
+    /* Garante que o rodapé fique no final da página */
+}
+
+footer p {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+}
