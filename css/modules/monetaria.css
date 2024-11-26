@@ -1,0 +1,50 @@
+.qrcode {
+    width: 20em; /* Ajuste o tamanho conforme necessário */
+    height: 30em; /* Tamanho proporcional */
+    margin-top: 20px; /* Distância do topo */
+    margin-bottom: 20px; /* Distância da base */
+    display: block; /* Faz a imagem ser tratada como bloco */
+    margin-left: auto; /* Centraliza a imagem à esquerda */
+    margin-right: auto; /* Centraliza a imagem à direita */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona a sombra */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .monetaria h1 {
+        font-size: 30px;
+        /* Tamanho menor para telas pequenas */
+    }
+    
+    #monetaria p {
+        font-size: 16px;
+        /* Ajusta o tamanho do texto */
+    }
+    
+    #valores div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Duas colunas em telas pequenas */
+        gap: 10px;
+        /* Espaçamento entre os blocos */
+    }
+    #valores a p {
+        font-size: 18px;
+        /* Tamanho do texto para telas menores */
+        height: 80px;
+        /* Altura reduzida para telas menores */
+    }
+}
+
+@media (min-width: 769px) {
+    #valores div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Quatro colunas em telas maiores */
+        gap: 20px; /* Espaçamento entre os blocos */
+        }
+                
+    #valores a p {
+        font-size: 20px; /* Tamanho do texto para telas maiores */
+        height: 100px; /* Altura para telas maiores */
+        }
+}

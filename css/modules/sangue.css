@@ -1,0 +1,13 @@
+header h1 {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    /* Faz com que o main ocupe todo o espaço disponível */
+}
+#map {
+    height: 100%;
+    /*width: 80%;
+    /* remover width e colocar height em 100% */
+}
