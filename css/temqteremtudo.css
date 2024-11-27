@@ -18,49 +18,31 @@ header {
     padding: 20px 0;
 }
 
-/* Estilização do container geral do header */
-.header-container {
-    display: flex; /* Usando flexbox para alinhar os elementos do header */
-    align-items: center; /* Centraliza verticalmente o h1 e a nav-bar */
-    justify-content: space-between; /* O h1 vai para a esquerda, e a nav-bar para a direita */
-    background-color: #9D9999;
-    padding: 20px 10px;
-}
-
-/* Estilização do título h1 */
-.header-container h1 {
-    font-size: 60px;
-    margin: 0;
-    color: #000000;
-}
-
-/* Geral: alinhamento total à direita */
-nav .navbar-nav {
+.header-content {
     display: flex;
+        /* Certifique-se de que o display esteja definido */
     align-items: center;
-    justify-content: flex-end; /* Move os links para a direita */
+    justify-content: space-between;
+        padding: 20px 0;
+}
+h1 {
+    font-size: 100px;
+        /* Altere para tamanhos responsivos usando media queries, se necessário */
+    margin: 0;
+    text-align: center;
 }
 
-/* Margem padrão entre os links */
-nav .navbar-nav li {
-    margin-right: 15px;
-}
-
-/* Espaçamento extra entre os dois grupos */
-nav .navbar-nav .group-separator {
-    margin-right: 60px; /* Espaçamento entre os grupos */
-}
-
-/* Estilo para links */
 nav .nav-link {
     color: #ffffff !important;
     transition: transform 0.3s ease;
+    /* Adicione !important para garantir que o estilo se aplique */
 }
 
 nav .nav-link:hover {
     text-decoration: underline;
     color: #075007 !important;
-    transform: scale(1.1);
+        transform: scale(1.1);
+        /* Adicione !important para garantir que o estilo se aplique */
 }
 
 footer {
