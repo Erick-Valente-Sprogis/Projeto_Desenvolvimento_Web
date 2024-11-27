@@ -1,7 +1,3 @@
-header h1 {
-    text-align: center;
-}
-
 main {
     flex: 1;
     /* Faz com que o main ocupe todo o espaço disponível */
