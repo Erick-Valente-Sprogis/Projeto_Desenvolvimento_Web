@@ -34,16 +34,13 @@
             <h2>Doações</h2>
             <ul class="list-unstyled d-flex flex-wrap justify-content-center">
                 <li class="m-2" style="background-color: #8D0808; border-radius: 10px; padding: 20px;">
-                    <img src="imgs/sangue.png" alt="" class="img-fluid" style="width: 80px;">
-                    <a href="sangue.php" class="text-white">Doação de <br>Sangue</a>
+                    <a href="sangue.php" class="text-white"><img src="imgs/sangue.png" alt="" class="img-fluid" style="width: 80px;"><br>Doação de Sangue</a>
                 </li>
                 <li class="m-2" style="background-color: #0A6F94; border-radius: 10px; padding: 20px;">
-                    <img src="imgs/alimentos.png" alt="" class="img-fluid" style="width: 80px;">
-                    <a href="alimento.php" class="text-white">Doação de <br>Alimentos</a>
+                    <a href="alimento.php" class="text-white"><img src="imgs/alimentos.png" alt="" class="img-fluid" style="width: 80px;"><br>Doação de Alimentos</a>
                 </li>
                 <li class="m-2" style="background-color: #E1C90D; border-radius: 10px; padding: 20px;">
-                    <img src="imgs/monetaria.png" alt="" class="img-fluid" style="width: 80px;">
-                    <a href="monetaria.php" class="text-dark">Doação <br>Monetária</a>
+                    <a href="monetaria.php" class="text-dark"><img src="imgs/monetaria.png" alt="" class="img-fluid" style="width: 80px;"><br>Doação Monetária</a>
                 </li>
             </ul>
         </div>
